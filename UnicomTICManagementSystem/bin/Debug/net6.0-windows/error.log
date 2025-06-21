@@ -1,0 +1,187 @@
+2025-06-15 17:12:12: Input error: Missing required fields for adding timetable.
+2025-06-15 18:08:45: Room Types: null, null, null, null
+2025-06-15 18:08:52: Room ID 4 has no Type or is null
+2025-06-15 18:08:52: Room ID 2 has no Type or is null
+2025-06-15 18:08:52: No timetables found for filter: Halls
+2025-06-15 18:08:54: Room ID 4 has no Type or is null
+2025-06-15 18:08:54: Room ID 2 has no Type or is null
+2025-06-15 18:08:54: No timetables found for filter: Labs
+2025-06-15 18:09:05: Room Types: null, null, null, null
+2025-06-15 18:09:07: Room Types: null, null, null, null
+2025-06-15 18:14:44: Room Types: null, null, null, null
+2025-06-15 18:14:49: Room ID 4 has no Type or is null
+2025-06-15 18:14:49: Room ID 4 has no Type or is null
+2025-06-15 18:14:49: Room ID 1 has no Type or is null
+2025-06-15 18:14:49: No timetables found for filter: Halls
+2025-06-15 18:14:50: Room ID 4 has no Type or is null
+2025-06-15 18:14:50: Room ID 4 has no Type or is null
+2025-06-15 18:14:50: Room ID 1 has no Type or is null
+2025-06-15 18:14:50: No timetables found for filter: Labs
+2025-06-15 18:14:54: Room ID 4 has no Type or is null
+2025-06-15 18:14:54: Room ID 4 has no Type or is null
+2025-06-15 18:14:54: Room ID 1 has no Type or is null
+2025-06-15 18:14:54: No timetables found for filter: Halls
+2025-06-15 18:15:36: Room ID 4 has no Type or is null
+2025-06-15 18:15:36: Room ID 4 has no Type or is null
+2025-06-15 18:15:36: Room ID 1 has no Type or is null
+2025-06-15 18:15:36: No timetables found for filter: Halls
+2025-06-15 18:15:37: Room ID 4 has no Type or is null
+2025-06-15 18:15:37: Room ID 4 has no Type or is null
+2025-06-15 18:15:37: Room ID 1 has no Type or is null
+2025-06-15 18:15:37: No timetables found for filter: Halls
+2025-06-15 18:15:38: Room ID 4 has no Type or is null
+2025-06-15 18:15:38: Room ID 4 has no Type or is null
+2025-06-15 18:15:38: Room ID 1 has no Type or is null
+2025-06-15 18:15:38: No timetables found for filter: Labs
+2025-06-15 18:15:39: Room ID 4 has no Type or is null
+2025-06-15 18:15:39: Room ID 4 has no Type or is null
+2025-06-15 18:15:39: Room ID 1 has no Type or is null
+2025-06-15 18:15:39: No timetables found for filter: Halls
+2025-06-15 18:22:32: Inserted 1 new subjects.
+2025-06-15 18:22:44: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-15 18:22:44: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-15 18:22:44: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-15 18:22:44: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-15 18:22:44: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-15 18:22:44: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-15 18:22:44: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-15 18:22:44: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-15 18:22:44: Room Types: null, null, null, null
+2025-06-15 18:22:50: Room ID 4 has no Type or is null
+2025-06-15 18:22:50: Room ID 4 has no Type or is null
+2025-06-15 18:22:50: Room ID 1 has no Type or is null
+2025-06-15 18:22:50: No timetables found for filter: Halls
+2025-06-15 18:22:51: Room ID 4 has no Type or is null
+2025-06-15 18:22:51: Room ID 4 has no Type or is null
+2025-06-15 18:22:51: Room ID 1 has no Type or is null
+2025-06-15 18:22:51: No timetables found for filter: Labs
+2025-06-15 18:23:07: Room ID 4 has no Type or is null
+2025-06-15 18:23:07: Room ID 4 has no Type or is null
+2025-06-15 18:23:07: Room ID 1 has no Type or is null
+2025-06-15 18:23:07: No timetables found for filter: Halls
+2025-06-15 18:23:18: Room ID 4 has no Type or is null
+2025-06-15 18:23:18: Room ID 4 has no Type or is null
+2025-06-15 18:23:18: Room ID 1 has no Type or is null
+2025-06-15 18:23:18: No timetables found for filter: Labs
+2025-06-15 18:23:20: Room ID 4 has no Type or is null
+2025-06-15 18:23:20: Room ID 4 has no Type or is null
+2025-06-15 18:23:20: Room ID 1 has no Type or is null
+2025-06-15 18:23:20: No timetables found for filter: Halls
+2025-06-15 18:26:48: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-15 18:26:48: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-15 18:26:48: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-15 18:26:48: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-15 18:26:48: Room Types: null, null, null, null
+2025-06-15 18:26:51: Room ID 4 has no Type or is null
+2025-06-15 18:26:51: Room ID 4 has no Type or is null
+2025-06-15 18:26:51: Room ID 1 has no Type or is null
+2025-06-15 18:26:51: No timetables found for filter: Halls
+2025-06-15 18:26:53: Room ID 4 has no Type or is null
+2025-06-15 18:26:53: Room ID 4 has no Type or is null
+2025-06-15 18:26:53: Room ID 1 has no Type or is null
+2025-06-15 18:26:53: No timetables found for filter: Labs
+2025-06-15 18:30:40: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-15 18:30:40: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-15 18:30:40: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-15 18:30:40: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-15 18:30:40: Room Types: null, null, null, null
+2025-06-15 19:55:22: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-15 19:55:22: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-15 19:55:22: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-15 19:55:22: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-15 19:55:22: Room Types: null, null, null, null
+2025-06-15 20:12:17: Error: No row selected for update.
+2025-06-16 14:42:22: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-16 14:42:22: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-16 14:42:22: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-16 14:42:22: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-16 14:42:22: Room Types: null, null, null, null
+2025-06-16 14:44:00: Retrieved Room: ID=1, Name=Lab 1, Type=Lab
+2025-06-16 14:44:00: Retrieved Room: ID=2, Name=Lab 2, Type=Lab
+2025-06-16 14:44:00: Retrieved Room: ID=3, Name=Hall A, Type=Hall
+2025-06-16 14:44:00: Retrieved Room: ID=4, Name=Hall B, Type=Hall
+2025-06-16 14:44:00: Room Types: null, null, null, null
+2025-06-16 15:09:51: Room Types: null, null, null, null
+2025-06-16 15:10:22: Room Types: null, null, null, null
+2025-06-16 15:22:17: Database initialization failed: database is locked
+database is locked
+2025-06-16 15:22:45: Database initialization failed: database is locked
+database is locked
+2025-06-16 15:23:02: Database initialization failed: database is locked
+database is locked
+2025-06-16 15:24:55: Room Types: null, null, null, null
+2025-06-16 15:25:36: Room Types: null, null, null, null
+2025-06-16 15:25:43: Input error: Missing required fields for adding timetable.
+2025-06-16 15:26:10: Room Types: null, null, null, null
+2025-06-16 15:26:16: Input error: Missing required fields for adding timetable.
+2025-06-16 15:26:27: Room Types: null, null, null, null
+2025-06-16 15:26:28: Room Types: null, null, null, null
+2025-06-16 15:26:53: Room Types: null, null, null, null
+2025-06-16 15:26:55: Room Types: null, null, null, null
+2025-06-16 15:33:10: Room Types: null, null, null, null
+2025-06-17 19:14:32: Room Types: null, null, null, null
+2025-06-17 19:14:36: Room Types: null, null, null, null
+2025-06-17 19:14:39: Room Types: null, null, null, null
+2025-06-17 19:17:34: Room Types: null, null, null, null
+2025-06-17 19:17:41: Room Types: null, null, null, null
+2025-06-17 19:17:49: Room Types: null, null, null, null
+2025-06-17 19:18:04: Room Types: null, null, null, null
+2025-06-17 19:21:19: Room Types: null, null, null, null
+2025-06-17 19:35:01: Room Types: null, null, null, null
+2025-06-17 19:36:35: Room Types: null, null, null, null
+2025-06-17 19:44:49: Room Types: null, null, null, null
+2025-06-17 19:46:58: Room Types: null, null, null, null
+2025-06-17 21:05:38: Room Types: null, null, null, null
+2025-06-18 20:53:36: Database initialization failed: database is locked
+database is locked
+2025-06-18 20:54:07: Room Types: null, null, null, null
+2025-06-18 20:54:13: Room Types: null, null, null, null
+2025-06-19 11:00:42: Room Types: null, null, null, null
+2025-06-19 11:00:48: Room Types: null, null, null, null
+2025-06-19 13:59:27: Room Types: null, null, null, null
+2025-06-19 13:59:32: Room Types: null, null, null, null
+2025-06-19 14:00:13: Room Types: null, null, null, null
+2025-06-19 14:00:18: Room Types: null, null, null, null
+2025-06-19 14:00:21: Room Types: null, null, null, null
+2025-06-19 21:05:40: Room Types: null, null, null, null
+2025-06-20 11:05:45: Database initialization failed: database is locked
+database is locked
+2025-06-20 11:05:59: Database initialization failed: database is locked
+database is locked
+2025-06-20 11:06:08: Room Types: null, null, null, null
+2025-06-20 11:08:41: Room Types: null, null, null, null
+2025-06-20 11:15:41: Room Types: null, null, null, null
+2025-06-20 11:35:56: Room Types: null, null, null, null
+2025-06-20 11:36:24: Room Types: null, null, null, null
+2025-06-20 11:36:35: Room Types: null, null, null, null
+2025-06-20 11:36:57: Room Types: null, null, null, null
+2025-06-20 11:37:01: Room Types: null, null, null, null
+2025-06-20 11:38:00: Input error: Missing required fields for marking attendance.
+2025-06-20 11:38:15: Input error: Missing required fields for marking attendance.
+2025-06-20 11:38:24: Room Types: null, null, null, null
+2025-06-20 12:41:27: Room Types: null, null, null, null
+2025-06-20 12:41:45: Room Types: null, null, null, null
+2025-06-20 12:44:15: Input error: Missing required fields for marking attendance.
+2025-06-20 12:44:19: Input error: Missing required fields for marking attendance.
+2025-06-20 15:36:14: Room Types: null, null, null, null
+2025-06-20 21:12:51: Room Types: null, null, null, null
+2025-06-21 07:58:24: Room Types: null, null, null, null
+2025-06-21 08:10:57: Room Types: null, null, null, null
+2025-06-21 08:11:24: Room Types: null, null, null, null
+2025-06-21 09:20:29: Room Types: null, null, null, null
+2025-06-21 09:31:48: Room Types: null, null, null, null
+2025-06-21 09:31:54: Room Types: null, null, null, null
+2025-06-21 09:33:57: Room Types: null, null, null, null
+2025-06-21 09:38:37: Room Types: null, null, null, null
+2025-06-21 09:38:44: Room Types: null, null, null, null
+2025-06-21 09:41:33: Room Types: null, null, null, null
+2025-06-21 09:41:35: Room Types: null, null, null, null
+2025-06-21 09:51:20: Room Types: null, null, null, null
+2025-06-21 09:51:41: Room Types: null, null, null, null
+2025-06-21 09:56:26: Room Types: null, null, null, null
+2025-06-21 09:59:06: Room Types: null, null, null, null
+2025-06-21 10:00:41: Room Types: null, null, null, null
+2025-06-21 10:03:08: Room Types: null, null, null, null
+2025-06-21 10:13:16: Room Types: null, null, null, null
+2025-06-21 10:13:27: Room Types: null, null, null, null
+2025-06-21 10:15:34: Room Types: null, null, null, null
