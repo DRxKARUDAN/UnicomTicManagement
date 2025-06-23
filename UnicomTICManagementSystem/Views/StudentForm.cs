@@ -193,5 +193,10 @@ namespace UnicomTICManagementSystem.Views
         {
             btnDeleteStudent.BackColor = System.Drawing.Color.FromArgb(33, 150, 243);
         }
+
+        private void panelStudents_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

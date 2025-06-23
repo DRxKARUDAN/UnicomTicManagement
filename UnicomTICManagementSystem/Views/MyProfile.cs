@@ -113,69 +113,74 @@ namespace UnicomTICManagementSystem.Views
 
         private void InitializeComponent()
         {
-            // Form settings
-            this.ClientSize = new Size(500, 400);
+            this.ClientSize = new Size(540, 400);
             this.Name = "MyProfile";
             this.Text = "My Profile";
-            this.BackColor = Color.White;
+            this.BackColor = Color.WhiteSmoke;
+            this.Font = new Font("Segoe UI", 9.75F);
 
-            // Welcome label
+            // Welcome Label
             lblWelcome = new Label
             {
                 Text = "Welcome, User!",
-                Font = new Font("Segoe UI", 14, FontStyle.Bold),
-                ForeColor = Color.DarkSlateBlue,
+                Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold),
+                ForeColor = Color.FromArgb(30, 30, 30),
                 Location = new Point(30, 20),
                 AutoSize = true
             };
 
             // Labels
-            lblName = new Label { Text = "Name:", Font = new Font("Segoe UI", 10), Location = new Point(30, 70), AutoSize = true };
-            lblUsername = new Label { Text = "Username:", Font = new Font("Segoe UI", 10), Location = new Point(30, 110), AutoSize = true };
-            lblPassword = new Label { Text = "Password:", Font = new Font("Segoe UI", 10), Location = new Point(30, 150), AutoSize = true };
-            lblConfirmPassword = new Label { Text = "Confirm Password:", Font = new Font("Segoe UI", 10), Location = new Point(30, 190), AutoSize = true };
-            lblRole = new Label { Text = "Role:", Font = new Font("Segoe UI", 10), Location = new Point(30, 230), AutoSize = true };
+            lblName = new Label { Text = "Name:", Location = new Point(30, 70), AutoSize = true };
+            lblUsername = new Label { Text = "Username:", Location = new Point(30, 110), AutoSize = true };
+            lblPassword = new Label { Text = "Password:", Location = new Point(30, 150), AutoSize = true };
+            lblConfirmPassword = new Label { Text = "Confirm Password:", Location = new Point(30, 190), AutoSize = true };
+            lblRole = new Label { Text = "Role:", Location = new Point(30, 230), AutoSize = true };
 
-            // Textboxes
-            txtName = new TextBox { Font = new Font("Segoe UI", 10), Location = new Point(180, 70), Size = new Size(250, 27) };
-            txtUsername = new TextBox { Font = new Font("Segoe UI", 10), Location = new Point(180, 110), Size = new Size(250, 27) };
-            txtPassword = new TextBox { Font = new Font("Segoe UI", 10), Location = new Point(180, 150), Size = new Size(250, 27), PasswordChar = '*' };
-            txtConfirmPassword = new TextBox { Font = new Font("Segoe UI", 10), Location = new Point(180, 190), Size = new Size(250, 27), PasswordChar = '*' };
+            // TextBoxes
+            txtName = new TextBox { Location = new Point(180, 65), Size = new Size(300, 27), Font = new Font("Segoe UI", 10F) };
+            txtUsername = new TextBox { Location = new Point(180, 105), Size = new Size(300, 27), Font = new Font("Segoe UI", 10F) };
+            txtPassword = new TextBox { Location = new Point(180, 145), Size = new Size(300, 27), Font = new Font("Segoe UI", 10F), PasswordChar = '*' };
+            txtConfirmPassword = new TextBox { Location = new Point(180, 185), Size = new Size(300, 27), Font = new Font("Segoe UI", 10F), PasswordChar = '*' };
 
             // ComboBox
             cmbRole = new ComboBox
             {
-                Font = new Font("Segoe UI", 10),
-                Location = new Point(180, 230),
-                Size = new Size(250, 28),
+                Location = new Point(180, 225),
+                Size = new Size(300, 27),
+                Font = new Font("Segoe UI", 10F),
                 DropDownStyle = ComboBoxStyle.DropDownList
             };
             cmbRole.Items.AddRange(new object[] { "Admin", "Staff", "Student", "Lecturer" });
 
-            // Buttons
+            // Save Button
             btnSaveChanges = new Button
             {
                 Text = "Save Changes",
-                Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                BackColor = Color.SteelBlue,
+                Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold),
+                BackColor = Color.FromArgb(0, 120, 215),
                 ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
                 Location = new Point(180, 280),
                 Size = new Size(120, 35)
             };
+            btnSaveChanges.FlatAppearance.BorderSize = 0;
             btnSaveChanges.Click += btnSaveChanges_Click;
 
+            // Logout Button
             btnLogout = new Button
             {
                 Text = "Logout",
-                Font = new Font("Segoe UI", 10, FontStyle.Bold),
-                BackColor = Color.IndianRed,
+                Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold),
+                BackColor = Color.FromArgb(232, 17, 35),
                 ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
                 Location = new Point(310, 280),
                 Size = new Size(120, 35)
             };
+            btnLogout.FlatAppearance.BorderSize = 0;
             btnLogout.Click += btnLogout_Click;
 
-            // Add controls
+            // Add Controls
             this.Controls.Add(lblWelcome);
             this.Controls.Add(lblName);
             this.Controls.Add(lblUsername);
@@ -192,5 +197,6 @@ namespace UnicomTICManagementSystem.Views
 
             this.Load += MyProfile_Load;
         }
+
     }
 }

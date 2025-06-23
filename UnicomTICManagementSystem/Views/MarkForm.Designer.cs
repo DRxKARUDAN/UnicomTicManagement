@@ -2,119 +2,7 @@
 {
     partial class MarkForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            dataGridViewMarks = new DataGridView();
-            lblScore = new Label();
-            txtScore = new TextBox();
-            comboBoxStudents = new ComboBox();
-            comboBoxExams = new ComboBox();
-            btnAddMark = new Button();
-            btnEditMark = new Button();
-            btnDeleteMark = new Button();
-
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMarks).BeginInit();
-            SuspendLayout();
-
-            // dataGridViewMarks
-            dataGridViewMarks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewMarks.Location = new Point(20, 20);
-            dataGridViewMarks.Size = new Size(700, 250);
-            dataGridViewMarks.SelectionChanged += dataGridViewMarks_SelectionChanged;
-
-            // lblScore
-            lblScore.AutoSize = true;
-            lblScore.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblScore.Location = new Point(20, 290);
-            lblScore.Text = "Score:";
-
-            // txtScore
-            txtScore.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            txtScore.Location = new Point(80, 286);
-            txtScore.Size = new Size(80, 25);
-
-            // comboBoxStudents
-            comboBoxStudents.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxStudents.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBoxStudents.Location = new Point(180, 285);
-            comboBoxStudents.Size = new Size(260, 28);
-
-            // comboBoxExams
-            comboBoxExams.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxExams.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBoxExams.Location = new Point(450, 285);
-            comboBoxExams.Size = new Size(270, 28);
-
-            // btnAddMark
-            btnAddMark.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddMark.Location = new Point(20, 330);
-            btnAddMark.Size = new Size(130, 35);
-            btnAddMark.Text = "Add Mark";
-            btnAddMark.Click += btnAddMark_Click;
-
-            // btnEditMark
-            btnEditMark.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEditMark.Location = new Point(160, 330);
-            btnEditMark.Size = new Size(130, 35);
-            btnEditMark.Text = "Edit Mark";
-            btnEditMark.Click += btnEditMark_Click;
-
-            // btnDeleteMark
-            btnDeleteMark.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDeleteMark.Location = new Point(300, 330);
-            btnDeleteMark.Size = new Size(130, 35);
-            btnDeleteMark.Text = "Delete Mark";
-            btnDeleteMark.Click += btnDeleteMark_Click;
-
-            // MarkForm
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(750, 390);
-            Controls.Add(dataGridViewMarks);
-            Controls.Add(lblScore);
-            Controls.Add(txtScore);
-            Controls.Add(comboBoxStudents);
-            Controls.Add(comboBoxExams);
-            Controls.Add(btnAddMark);
-            Controls.Add(btnEditMark);
-            Controls.Add(btnDeleteMark);
-            Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 5, 4, 5);
-            Name = "MarkForm";
-            Text = "Mark Management";
-            Load += MarkForm_Load;
-
-            ((System.ComponentModel.ISupportInitialize)dataGridViewMarks).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
-        }
-
-
-        #endregion
 
         private System.Windows.Forms.DataGridView dataGridViewMarks;
         private System.Windows.Forms.Label lblScore;
@@ -124,5 +12,115 @@
         private System.Windows.Forms.Button btnAddMark;
         private System.Windows.Forms.Button btnEditMark;
         private System.Windows.Forms.Button btnDeleteMark;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+                components.Dispose();
+
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+
+            this.dataGridViewMarks = new System.Windows.Forms.DataGridView();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.txtScore = new System.Windows.Forms.TextBox();
+            this.comboBoxStudents = new System.Windows.Forms.ComboBox();
+            this.comboBoxExams = new System.Windows.Forms.ComboBox();
+            this.btnAddMark = new System.Windows.Forms.Button();
+            this.btnEditMark = new System.Windows.Forms.Button();
+            this.btnDeleteMark = new System.Windows.Forms.Button();
+
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarks)).BeginInit();
+            this.SuspendLayout();
+
+            // MarkForm
+            this.ClientSize = new System.Drawing.Size(780, 460);
+            this.Name = "MarkForm";
+            this.Text = "Mark Management";
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.Load += new System.EventHandler(this.MarkForm_Load);
+
+            // dataGridViewMarks
+            this.dataGridViewMarks.Location = new System.Drawing.Point(40, 30);
+            this.dataGridViewMarks.Size = new System.Drawing.Size(700, 240);
+            this.dataGridViewMarks.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.dataGridViewMarks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMarks.SelectionChanged += new System.EventHandler(this.dataGridViewMarks_SelectionChanged);
+
+            // lblScore
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(40, 290);
+            this.lblScore.Text = "Score:";
+            this.lblScore.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+
+            // txtScore
+            this.txtScore.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtScore.Location = new System.Drawing.Point(95, 287);
+            this.txtScore.Size = new System.Drawing.Size(80, 25);
+
+            // comboBoxStudents
+            this.comboBoxStudents.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxStudents.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxStudents.Location = new System.Drawing.Point(200, 287);
+            this.comboBoxStudents.Size = new System.Drawing.Size(240, 25);
+
+            // comboBoxExams
+            this.comboBoxExams.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxExams.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxExams.Location = new System.Drawing.Point(460, 287);
+            this.comboBoxExams.Size = new System.Drawing.Size(280, 25);
+
+            // btnAddMark
+            this.btnAddMark.Text = "Add";
+            this.btnAddMark.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAddMark.BackColor = System.Drawing.Color.FromArgb(0, 120, 215);
+            this.btnAddMark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddMark.FlatAppearance.BorderSize = 0;
+            this.btnAddMark.ForeColor = System.Drawing.Color.White;
+            this.btnAddMark.Location = new System.Drawing.Point(40, 330);
+            this.btnAddMark.Size = new System.Drawing.Size(90, 35);
+            this.btnAddMark.Click += new System.EventHandler(this.btnAddMark_Click);
+
+            // btnEditMark
+            this.btnEditMark.Text = "Edit";
+            this.btnEditMark.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnEditMark.BackColor = System.Drawing.Color.FromArgb(0, 120, 215);
+            this.btnEditMark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditMark.FlatAppearance.BorderSize = 0;
+            this.btnEditMark.ForeColor = System.Drawing.Color.White;
+            this.btnEditMark.Location = new System.Drawing.Point(140, 330);
+            this.btnEditMark.Size = new System.Drawing.Size(90, 35);
+            this.btnEditMark.Click += new System.EventHandler(this.btnEditMark_Click);
+
+            // btnDeleteMark
+            this.btnDeleteMark.Text = "Delete";
+            this.btnDeleteMark.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.btnDeleteMark.BackColor = System.Drawing.Color.FromArgb(232, 17, 35);
+            this.btnDeleteMark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteMark.FlatAppearance.BorderSize = 0;
+            this.btnDeleteMark.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteMark.Location = new System.Drawing.Point(240, 330);
+            this.btnDeleteMark.Size = new System.Drawing.Size(90, 35);
+            this.btnDeleteMark.Click += new System.EventHandler(this.btnDeleteMark_Click);
+
+            // Add controls
+            this.Controls.Add(this.dataGridViewMarks);
+            this.Controls.Add(this.lblScore);
+            this.Controls.Add(this.txtScore);
+            this.Controls.Add(this.comboBoxStudents);
+            this.Controls.Add(this.comboBoxExams);
+            this.Controls.Add(this.btnAddMark);
+            this.Controls.Add(this.btnEditMark);
+            this.Controls.Add(this.btnDeleteMark);
+
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMarks)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
     }
 }

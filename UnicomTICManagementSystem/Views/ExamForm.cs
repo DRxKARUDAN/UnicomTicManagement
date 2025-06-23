@@ -44,7 +44,7 @@ namespace UnicomTICManagementSystem.Views
             dataGridViewExams.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             // Configure ComboBox for Subjects
-            comboBoxSubject.DisplayMember = "Name"; // Verify property name
+            comboBoxSubject.DisplayMember = "SubjectName"; // Tentative, adjust based on Subject class
             comboBoxSubject.ValueMember = "SubjectID";
 
             // Role-based access
@@ -65,9 +65,23 @@ namespace UnicomTICManagementSystem.Views
             dataGridViewExams.DataSource = _exams;
 
             comboBoxSubject.DataSource = null;
-            comboBoxSubject.DataSource = new BindingSource(_subjects, null);
+            comboBoxSubject.DataSource = _subjects;
+            comboBoxSubject.DisplayMember = "SubjectName"; // Tentative, adjust based on Subject class
+            comboBoxSubject.ValueMember = "SubjectID";
 
             if (dataGridViewExams.Rows.Count > 0) dataGridViewExams.Rows[0].Selected = true;
+
+            // Debug: Check if subjects are loaded correctly and display their properties
+            if (_subjects == null || _subjects.Count == 0)
+            {
+                MessageBox.Show("No subjects loaded. Check the database or GetSubjectsAsync.", "Error");
+            }
+            else
+            {
+                var firstSubject = _subjects[0];
+                var displayValue = firstSubject.SubjectName ?? firstSubject.ToString() ?? "No Display Value";
+                MessageBox.Show($"First subject loaded: {displayValue}. Check if 'SubjectName' is correct. Please share the Subject class definition.", "Debug");
+            }
         }
 
         private async Task<List<Subject>> GetSubjectsAsync()
@@ -134,6 +148,11 @@ namespace UnicomTICManagementSystem.Views
                 txtExamName.Text = "";
                 comboBoxSubject.SelectedIndex = -1;
             }
+        }
+
+        private void ExamForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

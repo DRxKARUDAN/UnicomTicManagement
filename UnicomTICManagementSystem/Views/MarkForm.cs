@@ -66,7 +66,7 @@ namespace UnicomTICManagementSystem.Views
             // Create and configure the panel for the button
             _buttonPanel = new Panel
             {
-                Location = new System.Drawing.Point(400, dataGridViewMarks.Location.Y + dataGridViewMarks.Height + 10), // Below dataGridViewMarks with 10px padding
+                Location = new System.Drawing.Point(this.ClientSize.Width - 160, this.ClientSize.Height - 40), // Right bottom corner with padding
                 Size = new System.Drawing.Size(150, 30),
                 BorderStyle = BorderStyle.None
             };

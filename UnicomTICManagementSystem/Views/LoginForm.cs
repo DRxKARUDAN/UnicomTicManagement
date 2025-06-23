@@ -25,7 +25,10 @@ namespace UnicomTICManagementSystem.Views
                 lblRole.Visible = isRegisterMode;
                 comboRole.Visible = isRegisterMode;
                 // Adjust form height dynamically
-                this.ClientSize = new Size(429, isRegisterMode ? 188 : 148);
+                this.ClientSize = new Size(429, isRegisterMode ? 228 : 188);
+                this.MinimumSize = new Size(445, 188);
+
+
             };
         }
 
@@ -114,6 +117,11 @@ namespace UnicomTICManagementSystem.Views
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             // Optional: Add password validation or feedback here if needed
+        }
+
+        private void LoginForm_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

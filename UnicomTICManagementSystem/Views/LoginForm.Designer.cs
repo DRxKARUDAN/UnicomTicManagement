@@ -2,180 +2,175 @@
 {
     partial class LoginForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        private Label lblUsername;
+        private TextBox txtUsername;
+        private Label lblPassword;
+        private TextBox txtPassword;
+        private Label lblRole;
+        private ComboBox comboRole;
+        private CheckBox chkRegisterNewUser;
+        private Button btnLogin;
+        private Button btnRegister;
+        private Button btnCancel;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
+
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             lblUsername = new Label();
-            lblPassword = new Label();
-            lblRole = new Label();
             txtUsername = new TextBox();
+            lblPassword = new Label();
             txtPassword = new TextBox();
+            lblRole = new Label();
             comboRole = new ComboBox();
-            btnLogin = new Button();
-            btnCancel = new Button();
-            btnRegister = new Button();
             chkRegisterNewUser = new CheckBox();
+            btnLogin = new Button();
+            btnRegister = new Button();
+            btnCancel = new Button();
             SuspendLayout();
             // 
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Location = new Point(16, 23);
-            lblUsername.Margin = new Padding(4, 0, 4, 0);
+            lblUsername.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblUsername.Location = new Point(30, 20);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(78, 20);
+            lblUsername.Size = new Size(91, 23);
             lblUsername.TabIndex = 0;
             lblUsername.Text = "Username:";
+            // 
+            // txtUsername
+            // 
+            txtUsername.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.Location = new Point(140, 17);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(240, 30);
+            txtUsername.TabIndex = 1;
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(16, 63);
-            lblPassword.Margin = new Padding(4, 0, 4, 0);
+            lblPassword.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPassword.Location = new Point(30, 60);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(73, 20);
-            lblPassword.TabIndex = 1;
+            lblPassword.Size = new Size(86, 23);
+            lblPassword.TabIndex = 2;
             lblPassword.Text = "Password:";
+            // 
+            // txtPassword
+            // 
+            txtPassword.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.Location = new Point(140, 57);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '●';
+            txtPassword.Size = new Size(240, 30);
+            txtPassword.TabIndex = 3;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // lblRole
             // 
             lblRole.AutoSize = true;
-            lblRole.Location = new Point(16, 103);
-            lblRole.Margin = new Padding(4, 0, 4, 0);
+            lblRole.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblRole.Location = new Point(30, 120);
             lblRole.Name = "lblRole";
-            lblRole.Size = new Size(42, 20);
-            lblRole.TabIndex = 2;
+            lblRole.Size = new Size(48, 23);
+            lblRole.TabIndex = 5;
             lblRole.Text = "Role:";
-            // 
-            // txtUsername
-            // 
-            txtUsername.Location = new Point(101, 18);
-            txtUsername.Margin = new Padding(4, 5, 4, 5);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(265, 27);
-            txtUsername.TabIndex = 3;
-            // 
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(101, 58);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
-            txtPassword.Name = "txtPassword";
-            txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(265, 27);
-            txtPassword.TabIndex = 4;
-            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // comboRole
             // 
             comboRole.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboRole.FormattingEnabled = true;
-            comboRole.Location = new Point(101, 98);
-            comboRole.Margin = new Padding(4, 5, 4, 5);
+            comboRole.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            comboRole.Location = new Point(140, 117);
             comboRole.Name = "comboRole";
-            comboRole.Size = new Size(265, 28);
-            comboRole.TabIndex = 5;
-            // 
-            // btnLogin
-            // 
-            btnLogin.Location = new Point(101, 138);
-            btnLogin.Margin = new Padding(4, 5, 4, 5);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(100, 35);
-            btnLogin.TabIndex = 6;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += btnLogin_Click;
-            // 
-            // btnCancel
-            // 
-            btnCancel.Location = new Point(368, 139);
-            btnCancel.Margin = new Padding(4, 5, 4, 5);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(100, 35);
-            btnCancel.TabIndex = 8;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
-            // 
-            // btnRegister
-            // 
-            btnRegister.Location = new Point(234, 139);
-            btnRegister.Margin = new Padding(4, 5, 4, 5);
-            btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(100, 35);
-            btnRegister.TabIndex = 7;
-            btnRegister.Text = "Register";
-            btnRegister.UseVisualStyleBackColor = true;
-            btnRegister.Click += btnRegister_Click;
+            comboRole.Size = new Size(240, 31);
+            comboRole.TabIndex = 6;
             // 
             // chkRegisterNewUser
             // 
-            chkRegisterNewUser.AutoSize = true;
-            chkRegisterNewUser.Location = new Point(386, 100);
-            chkRegisterNewUser.Margin = new Padding(4, 5, 4, 5);
+            chkRegisterNewUser.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            chkRegisterNewUser.Location = new Point(140, 90);
             chkRegisterNewUser.Name = "chkRegisterNewUser";
-            chkRegisterNewUser.Size = new Size(152, 24);
-            chkRegisterNewUser.TabIndex = 9;
+            chkRegisterNewUser.Size = new Size(240, 24);
+            chkRegisterNewUser.TabIndex = 4;
             chkRegisterNewUser.Text = "Register New User";
-            chkRegisterNewUser.UseVisualStyleBackColor = true;
+            // 
+            // btnLogin
+            // 
+            btnLogin.BackColor = Color.FromArgb(0, 120, 215);
+            btnLogin.FlatAppearance.BorderSize = 0;
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(30, 155);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(90, 30);
+            btnLogin.TabIndex = 7;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // btnRegister
+            // 
+            btnRegister.BackColor = Color.FromArgb(0, 120, 215);
+            btnRegister.FlatAppearance.BorderSize = 0;
+            btnRegister.FlatStyle = FlatStyle.Flat;
+            btnRegister.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegister.ForeColor = Color.White;
+            btnRegister.Location = new Point(135, 155);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(90, 30);
+            btnRegister.TabIndex = 8;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
+            // 
+            // btnCancel
+            // 
+            btnCancel.BackColor = Color.FromArgb(232, 17, 35);
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCancel.ForeColor = Color.White;
+            btnCancel.Location = new Point(244, 155);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(90, 30);
+            btnCancel.TabIndex = 9;
+            btnCancel.Text = "Exit";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(569, 188);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(429, 188);
+            Controls.Add(lblUsername);
+            Controls.Add(txtUsername);
+            Controls.Add(lblPassword);
+            Controls.Add(txtPassword);
             Controls.Add(chkRegisterNewUser);
+            Controls.Add(lblRole);
+            Controls.Add(comboRole);
+            Controls.Add(btnLogin);
             Controls.Add(btnRegister);
             Controls.Add(btnCancel);
-            Controls.Add(btnLogin);
-            Controls.Add(comboRole);
-            Controls.Add(txtPassword);
-            Controls.Add(txtUsername);
-            Controls.Add(lblRole);
-            Controls.Add(lblPassword);
-            Controls.Add(lblUsername);
-            Margin = new Padding(4, 5, 4, 5);
+            Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            Load += LoginForm_Load;
+            Load += LoginForm_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
-
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label lblRole;
-        private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.ComboBox comboRole;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.CheckBox chkRegisterNewUser;
     }
 }

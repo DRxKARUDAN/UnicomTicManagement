@@ -4,168 +4,167 @@
     {
         private System.ComponentModel.IContainer components = null;
 
+        private System.Windows.Forms.Label lblStudents;
         private System.Windows.Forms.ListBox lstStudents;
-        private System.Windows.Forms.ComboBox cmbStudentName;
-        private System.Windows.Forms.ComboBox cmbCourse;
+
         private System.Windows.Forms.Label lblStudentName;
+        private System.Windows.Forms.ComboBox cmbStudentName;
+
         private System.Windows.Forms.Label lblCourse;
+        private System.Windows.Forms.ComboBox cmbCourse;
+
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Button btnEditStudent;
         private System.Windows.Forms.Button btnDeleteStudent;
-
-        private System.Windows.Forms.Panel panelStudents;
-
-        private readonly System.Drawing.Color panelBackColor = System.Drawing.Color.FromArgb(245, 245, 245);
-        private readonly System.Drawing.Color btnBackColor = System.Drawing.Color.FromArgb(33, 150, 243);
-        private readonly System.Drawing.Color btnForeColor = System.Drawing.Color.White;
-        private readonly System.Drawing.Color btnHoverColor = System.Drawing.Color.FromArgb(25, 118, 210);
 
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
                 components.Dispose();
+
             base.Dispose(disposing);
         }
 
         private void InitializeComponent()
         {
-            this.lstStudents = new System.Windows.Forms.ListBox();
-            this.cmbStudentName = new System.Windows.Forms.ComboBox();
-            this.cmbCourse = new System.Windows.Forms.ComboBox();
-            this.lblStudentName = new System.Windows.Forms.Label();
-            this.lblCourse = new System.Windows.Forms.Label();
-            this.btnAddStudent = new System.Windows.Forms.Button();
-            this.btnEditStudent = new System.Windows.Forms.Button();
-            this.btnDeleteStudent = new System.Windows.Forms.Button();
-            this.panelStudents = new System.Windows.Forms.Panel();
-
-            this.SuspendLayout();
-
-            // Fonts
-            var sectionFont = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            var labelFont = new System.Drawing.Font("Segoe UI", 9.5F);
-            var buttonFont = new System.Drawing.Font("Segoe UI", 9F);
-
-            int panelWidth = 660;
-            int panelHeight = 320;
-            int padding = 15;
-
-            // panelStudents
-            this.panelStudents.BackColor = panelBackColor;
-            this.panelStudents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelStudents.Location = new System.Drawing.Point(15, 15);
-            this.panelStudents.Size = new System.Drawing.Size(panelWidth, panelHeight);
-            this.panelStudents.Padding = new System.Windows.Forms.Padding(padding);
-
+            lblStudents = new Label();
+            lstStudents = new ListBox();
+            lblStudentName = new Label();
+            cmbStudentName = new ComboBox();
+            lblCourse = new Label();
+            cmbCourse = new ComboBox();
+            btnAddStudent = new Button();
+            btnEditStudent = new Button();
+            btnDeleteStudent = new Button();
+            SuspendLayout();
+            // 
+            // lblStudents
+            // 
+            lblStudents.AutoSize = true;
+            lblStudents.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lblStudents.ForeColor = Color.FromArgb(30, 30, 30);
+            lblStudents.Location = new Point(40, 30);
+            lblStudents.Name = "lblStudents";
+            lblStudents.Size = new Size(109, 32);
+            lblStudents.TabIndex = 0;
+            lblStudents.Text = "Students";
+            // 
             // lstStudents
-            this.lstStudents.Font = labelFont;
-            this.lstStudents.Location = new System.Drawing.Point(padding, padding + 5);
-            this.lstStudents.Size = new System.Drawing.Size(320, 270);
-            this.lstStudents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lstStudents.SelectedIndexChanged += new System.EventHandler(this.lstStudents_SelectedIndexChanged);
-
+            // 
+            lstStudents.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lstStudents.ForeColor = Color.FromArgb(30, 30, 30);
+            lstStudents.ItemHeight = 23;
+            lstStudents.Location = new Point(40, 65);
+            lstStudents.Name = "lstStudents";
+            lstStudents.Size = new Size(290, 280);
+            lstStudents.TabIndex = 1;
+            lstStudents.SelectedIndexChanged += lstStudents_SelectedIndexChanged;
+            // 
             // lblStudentName
-            this.lblStudentName.AutoSize = true;
-            this.lblStudentName.Font = sectionFont;
-            this.lblStudentName.ForeColor = System.Drawing.Color.FromArgb(33, 33, 33);
-            this.lblStudentName.Location = new System.Drawing.Point(350, padding);
-            this.lblStudentName.Text = "Student Name";
-
+            // 
+            lblStudentName.AutoSize = true;
+            lblStudentName.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblStudentName.ForeColor = Color.FromArgb(30, 30, 30);
+            lblStudentName.Location = new Point(370, 65);
+            lblStudentName.Name = "lblStudentName";
+            lblStudentName.Size = new Size(143, 28);
+            lblStudentName.TabIndex = 2;
+            lblStudentName.Text = "Student Name";
+            // 
             // cmbStudentName
-            this.cmbStudentName.Font = labelFont;
-            this.cmbStudentName.Location = new System.Drawing.Point(350, padding + 30);
-            this.cmbStudentName.Size = new System.Drawing.Size(290, 28);
-            this.cmbStudentName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStudentName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
+            // 
+            cmbStudentName.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbStudentName.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbStudentName.FormattingEnabled = true;
+            cmbStudentName.Location = new Point(370, 95);
+            cmbStudentName.Name = "cmbStudentName";
+            cmbStudentName.Size = new Size(280, 31);
+            cmbStudentName.TabIndex = 3;
+            // 
             // lblCourse
-            this.lblCourse.AutoSize = true;
-            this.lblCourse.Font = sectionFont;
-            this.lblCourse.ForeColor = System.Drawing.Color.FromArgb(33, 33, 33);
-            this.lblCourse.Location = new System.Drawing.Point(350, padding + 70);
-            this.lblCourse.Text = "Course";
-
+            // 
+            lblCourse.AutoSize = true;
+            lblCourse.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCourse.ForeColor = Color.FromArgb(30, 30, 30);
+            lblCourse.Location = new Point(370, 140);
+            lblCourse.Name = "lblCourse";
+            lblCourse.Size = new Size(75, 28);
+            lblCourse.TabIndex = 4;
+            lblCourse.Text = "Course";
+            // 
             // cmbCourse
-            this.cmbCourse.Font = labelFont;
-            this.cmbCourse.Location = new System.Drawing.Point(350, padding + 100);
-            this.cmbCourse.Size = new System.Drawing.Size(290, 28);
-            this.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-
-            // Buttons
-            int btnWidth = 100;
-            int btnHeight = 36;
-            int btnSpacing = 12;
-            int btnTop = panelHeight - btnHeight - padding - 10; // bottom aligned inside panel
-
+            // 
+            cmbCourse.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCourse.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbCourse.FormattingEnabled = true;
+            cmbCourse.Location = new Point(370, 170);
+            cmbCourse.Name = "cmbCourse";
+            cmbCourse.Size = new Size(280, 31);
+            cmbCourse.TabIndex = 5;
+            // 
             // btnAddStudent
-            this.btnAddStudent.Font = buttonFont;
-            this.btnAddStudent.BackColor = btnBackColor;
-            this.btnAddStudent.ForeColor = btnForeColor;
-            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddStudent.FlatAppearance.BorderSize = 0;
-            this.btnAddStudent.Location = new System.Drawing.Point(350, btnTop);
-            this.btnAddStudent.Size = new System.Drawing.Size(btnWidth, btnHeight);
-            this.btnAddStudent.Text = "Add";
-            this.btnAddStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddStudent.UseVisualStyleBackColor = false;
-            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
-            this.btnAddStudent.MouseEnter += new System.EventHandler(this.btnAddStudent_MouseEnter);
-            this.btnAddStudent.MouseLeave += new System.EventHandler(this.btnAddStudent_MouseLeave);
-
+            // 
+            btnAddStudent.BackColor = Color.FromArgb(0, 120, 215);
+            btnAddStudent.FlatAppearance.BorderSize = 0;
+            btnAddStudent.FlatStyle = FlatStyle.Flat;
+            btnAddStudent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddStudent.ForeColor = Color.White;
+            btnAddStudent.Location = new Point(370, 234);
+            btnAddStudent.Name = "btnAddStudent";
+            btnAddStudent.Size = new Size(90, 35);
+            btnAddStudent.TabIndex = 6;
+            btnAddStudent.Text = "Add";
+            btnAddStudent.UseVisualStyleBackColor = false;
+            btnAddStudent.Click += btnAddStudent_Click;
+            // 
             // btnEditStudent
-            this.btnEditStudent.Font = buttonFont;
-            this.btnEditStudent.BackColor = btnBackColor;
-            this.btnEditStudent.ForeColor = btnForeColor;
-            this.btnEditStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditStudent.FlatAppearance.BorderSize = 0;
-            this.btnEditStudent.Location = new System.Drawing.Point(350 + btnWidth + btnSpacing, btnTop);
-            this.btnEditStudent.Size = new System.Drawing.Size(btnWidth, btnHeight);
-            this.btnEditStudent.Text = "Edit";
-            this.btnEditStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditStudent.UseVisualStyleBackColor = false;
-            this.btnEditStudent.Click += new System.EventHandler(this.btnEditStudent_Click);
-            this.btnEditStudent.MouseEnter += new System.EventHandler(this.btnEditStudent_MouseEnter);
-            this.btnEditStudent.MouseLeave += new System.EventHandler(this.btnEditStudent_MouseLeave);
-
+            // 
+            btnEditStudent.BackColor = Color.FromArgb(0, 120, 215);
+            btnEditStudent.FlatAppearance.BorderSize = 0;
+            btnEditStudent.FlatStyle = FlatStyle.Flat;
+            btnEditStudent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEditStudent.ForeColor = Color.White;
+            btnEditStudent.Location = new Point(470, 234);
+            btnEditStudent.Name = "btnEditStudent";
+            btnEditStudent.Size = new Size(90, 35);
+            btnEditStudent.TabIndex = 7;
+            btnEditStudent.Text = "Edit";
+            btnEditStudent.UseVisualStyleBackColor = false;
+            btnEditStudent.Click += btnEditStudent_Click;
+            // 
             // btnDeleteStudent
-            this.btnDeleteStudent.Font = buttonFont;
-            this.btnDeleteStudent.BackColor = btnBackColor;
-            this.btnDeleteStudent.ForeColor = btnForeColor;
-            this.btnDeleteStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteStudent.FlatAppearance.BorderSize = 0;
-            this.btnDeleteStudent.Location = new System.Drawing.Point(350 + 2 * (btnWidth + btnSpacing), btnTop);
-            this.btnDeleteStudent.Size = new System.Drawing.Size(btnWidth, btnHeight);
-            this.btnDeleteStudent.Text = "Delete";
-            this.btnDeleteStudent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteStudent.UseVisualStyleBackColor = false;
-            this.btnDeleteStudent.Click += new System.EventHandler(this.btnDeleteStudent_Click);
-            this.btnDeleteStudent.MouseEnter += new System.EventHandler(this.btnDeleteStudent_MouseEnter);
-            this.btnDeleteStudent.MouseLeave += new System.EventHandler(this.btnDeleteStudent_MouseLeave);
-
-            // Add controls to panelStudents
-            this.panelStudents.Controls.Add(this.lstStudents);
-            this.panelStudents.Controls.Add(this.lblStudentName);
-            this.panelStudents.Controls.Add(this.cmbStudentName);
-            this.panelStudents.Controls.Add(this.lblCourse);
-            this.panelStudents.Controls.Add(this.cmbCourse);
-            this.panelStudents.Controls.Add(this.btnAddStudent);
-            this.panelStudents.Controls.Add(this.btnEditStudent);
-            this.panelStudents.Controls.Add(this.btnDeleteStudent);
-
+            // 
+            btnDeleteStudent.BackColor = Color.FromArgb(232, 17, 35);
+            btnDeleteStudent.FlatAppearance.BorderSize = 0;
+            btnDeleteStudent.FlatStyle = FlatStyle.Flat;
+            btnDeleteStudent.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDeleteStudent.ForeColor = Color.White;
+            btnDeleteStudent.Location = new Point(570, 234);
+            btnDeleteStudent.Name = "btnDeleteStudent";
+            btnDeleteStudent.Size = new Size(90, 35);
+            btnDeleteStudent.TabIndex = 8;
+            btnDeleteStudent.Text = "Delete";
+            btnDeleteStudent.UseVisualStyleBackColor = false;
+            btnDeleteStudent.Click += btnDeleteStudent_Click;
+            // 
             // StudentForm
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(panelWidth + 30, panelHeight + 30);
-            this.Controls.Add(this.panelStudents);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "StudentForm";
-            this.Text = "Student Management";
-            this.Load += new System.EventHandler(this.StudentForm_Load);
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(740, 450);
+            Controls.Add(lblStudents);
+            Controls.Add(lstStudents);
+            Controls.Add(lblStudentName);
+            Controls.Add(cmbStudentName);
+            Controls.Add(lblCourse);
+            Controls.Add(cmbCourse);
+            Controls.Add(btnAddStudent);
+            Controls.Add(btnEditStudent);
+            Controls.Add(btnDeleteStudent);
+            Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Name = "StudentForm";
+            Text = "Student Management";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

@@ -135,7 +135,7 @@
             btnAddTimetable.FlatStyle = FlatStyle.Flat;
             btnAddTimetable.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnAddTimetable.ForeColor = Color.White;
-            btnAddTimetable.Location = new Point(300, 385);
+            btnAddTimetable.Location = new Point(302, 404);
             btnAddTimetable.Name = "btnAddTimetable";
             btnAddTimetable.Size = new Size(100, 35);
             btnAddTimetable.TabIndex = 7;
@@ -148,7 +148,7 @@
             btnEditTimetable.FlatStyle = FlatStyle.Flat;
             btnEditTimetable.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnEditTimetable.ForeColor = Color.White;
-            btnEditTimetable.Location = new Point(410, 385);
+            btnEditTimetable.Location = new Point(412, 404);
             btnEditTimetable.Name = "btnEditTimetable";
             btnEditTimetable.Size = new Size(100, 35);
             btnEditTimetable.TabIndex = 8;
@@ -161,7 +161,7 @@
             btnDeleteTimetable.FlatStyle = FlatStyle.Flat;
             btnDeleteTimetable.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnDeleteTimetable.ForeColor = Color.White;
-            btnDeleteTimetable.Location = new Point(520, 385);
+            btnDeleteTimetable.Location = new Point(522, 404);
             btnDeleteTimetable.Name = "btnDeleteTimetable";
             btnDeleteTimetable.Size = new Size(100, 35);
             btnDeleteTimetable.TabIndex = 9;
